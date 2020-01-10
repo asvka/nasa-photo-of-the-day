@@ -24,7 +24,7 @@ export default function PhotoList() {
                 {entries.map(entries => {
                     return (
                         <PhotoCard
-                        key={entries.date}
+                        date={entries.date}s
                         title={entries.title}
                         img={entries.hdurl}
                         desc={entries.explanation}

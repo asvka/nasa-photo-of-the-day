@@ -50,15 +50,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.wrapper h1{
+#title{
   font-size: 4rem;
+  text-shadow: -1px 0 #b58deb, 0 1px #b58deb, 1px 0 #b58deb, 0 -1px #b58deb;
 }
 #date{
   font-size: 2rem;
   padding: 2%;
 }
 img{
-  width: 40%;
+  width: 70%;
   height: auto;
   border-radius: 50px;
   box-shadow: 10px 10px white;
@@ -70,7 +71,7 @@ h4{
   font-style: italic;
   font-size: 2rem;
 }
-p{
+#explanation{
   display: flex;
   justify-content: center;
   padding: 5%;

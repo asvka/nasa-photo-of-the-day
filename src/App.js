@@ -4,7 +4,7 @@ import "./App.css";
 // import { Card } from "react-bootstrap";
 // import PhotoCard from "./components/PhotoCard/PhotoCard";
 // import PhotoList from "./components/PhotoList/PhotoList.js";
-import Card from "./components/card"
+import Card2 from "./components/card2"
 
 // axios
 //   .get('https://api.nasa.gov/planetary/apod?api_key=xogsnInRUlQ4TuM9Am7dg1Txz8TWBFd0fadZv1aa')
@@ -17,7 +17,7 @@ import Card from "./components/card"
 function App() {
   return (
     <div className="App">
-      <Card />
+      <Card2 />
     </div>
   );
 }
