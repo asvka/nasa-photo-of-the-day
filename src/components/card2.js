@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-import { Card, CardBody, CardImg, CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardBody } from 'reactstrap';
 import styled from 'styled-components';
 
 
@@ -25,6 +25,7 @@ import styled from 'styled-components';
 // }
 const Title = styled.h1`
     font-size: 4rem;
+    font-family: 'Geo';
     text-shadow: -1px 0 #b58deb, 0 1px #b58deb, 1px 0 #b58deb, 0 -1px #b58deb;
     `;
 const Paragraph = styled.p`
@@ -35,7 +36,7 @@ const Paragraph = styled.p`
     padding-right: 15%;
 `;
 const Image = styled.img`
-    width: 70%;
+    width: 45%;
     height: auto;
     border-radius: 50px;
     box-shadow: 10px 10px white;
@@ -43,8 +44,12 @@ const Image = styled.img`
 const Date = styled.h2`
     font-style: italic;
     font-size: 2rem;
+    font-family: 'Geo';
     padding: 2%;
 `;
+// const Container = styled.div`
+//     display: flex;
+// `;
 
 const Card2 = (props) => {
     const [data, setData] = useState({});
@@ -52,6 +57,7 @@ const Card2 = (props) => {
                 axios
                 .get('https://api.nasa.gov/planetary/apod?api_key=xogsnInRUlQ4TuM9Am7dg1Txz8TWBFd0fadZv1aa')
                 .then(res => setData(res.data) )
+                .catch(err => console.log('Error retrieving data!'))
             },[])
             console.log(data);
             return (
