@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { Card, CardBody, CardImg, CardTitle, CardSubtitle } from 'reactstrap';
+import styled from 'styled-components';
 
 
 // function Card() {
@@ -22,6 +23,29 @@ import { Card, CardBody, CardImg, CardTitle, CardSubtitle } from 'reactstrap';
 //         </div>
 //     )
 // }
+const Title = styled.h1`
+    font-size: 4rem;
+    text-shadow: -1px 0 #b58deb, 0 1px #b58deb, 1px 0 #b58deb, 0 -1px #b58deb;
+    `;
+const Paragraph = styled.p`
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+`;
+const Image = styled.img`
+    width: 70%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 10px 10px white;
+`;
+const Date = styled.h2`
+    font-style: italic;
+    font-size: 2rem;
+    padding: 2%;
+`;
+
 const Card2 = (props) => {
     const [data, setData] = useState({});
     useEffect(() => {
@@ -34,10 +58,11 @@ const Card2 = (props) => {
                 <div>
                     <Card>
                         <CardBody>
-                        <CardTitle id='title'>{data.title}</CardTitle>
-                        <CardSubtitle id='date'>{data.date}</CardSubtitle>
-                        <CardImg src={data.url} alt={data.title} />
-                        <CardSubtitle id='explanation'>{data.explanation}</CardSubtitle>
+                        <Title>{data.title}</Title>
+                        <Date>{data.date}</Date>
+                        <Image src={data.url} alt={data.title} />
+                        <Paragraph>{data.explanation}</Paragraph>
+                        <Paragraph>Copyright: {data.copyright}</Paragraph>
                         </CardBody>
                     </Card>
                 </div>

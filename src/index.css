@@ -33,7 +33,7 @@ body {
   font-family: 'Baloo Bhai', cursive;
   color: #ffffff;
   background-color: black;
-  padding: 5%;
+  padding: 1%;
 }
 ol, ul {
 	list-style: none;
@@ -50,32 +50,32 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-#title{
+/* #title{
   font-size: 4rem;
   text-shadow: -1px 0 #b58deb, 0 1px #b58deb, 1px 0 #b58deb, 0 -1px #b58deb;
-}
-#date{
+} */
+/* #date{
   font-size: 2rem;
   padding: 2%;
-}
-img{
+} */
+/* img{
   width: 70%;
   height: auto;
   border-radius: 50px;
   box-shadow: 10px 10px white;
 
-}
+} */
 
 
-h4{
+/* h4{
   font-style: italic;
   font-size: 2rem;
-}
-#explanation{
+} */
+/* #explanation{
   display: flex;
   justify-content: center;
   padding: 5%;
   padding-left: 10%;
   padding-right: 10%;
 
-}
+} */
